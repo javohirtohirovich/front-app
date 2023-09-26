@@ -11,9 +11,34 @@
 <!-- Font Google -->
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Yandex.Metrika counter -->
+ <script type="text/javascript">
+  var yaParams = {ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>"};
+ //объявляем параметр ip_adress и записываем в него IP посетителя
+ (function (m, e, t, r, i, k, a) {
+   m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+   m[i].l = 1 * new Date();
+   for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+   k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+ })
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ ym(95045814, "init", {
+   clickmap: true,
+   params:window.yaParams.ip_adress,
+   trackLinks: true,
+   accurateTrackBounce: true,
+   webvisor: true,
+   ecommerce: "dataLayer"
+ });
+</script>
+
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/95045814" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/logo.png" alt="logo" class="logo-1"> </a>
